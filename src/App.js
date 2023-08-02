@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './index.css';
 
 
 export default function MyApp(){
@@ -19,7 +19,7 @@ function MyButton(){
     setCount (count + 1);
   }
   return(
-    <button onClick={handleClick}>
+    <button className="btns" onClick={handleClick}>
       Liked {count} times
     </button>
   );
